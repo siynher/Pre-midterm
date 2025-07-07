@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Great+Vibes&family=Rhodium+Libre&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Glass+Antiqua&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+}
+
+/* header section:title */
+.header {
+  background: #b09464;
+  padding: 10px;
+}
+
+.title-container {
+  display: inline;
+}
+
+.title-container > h1 {
+  display: inline;
+  font-size: 50px;
+  margin-block: 0px;
+}
+
+.title-container > h1:first-child {
+  color: #ffe999;
+}
+
+.title-container > h1:nth-child(2) {
+  color: #ffffff;
+}
+
+/* header section: links */
+.links {
+  display: inline;
+  font-size: 30px;
+  margin-left: 10em;
+}
+.links > ul {
+  list-style: none;
+  display: inline;
+  margin-block: 0px;
+}
+
+.links > ul > li {
+  text-align: center;
+  display: inline;
+  margin-block: 0px;
+  font-family: 'Abel', sans-serif;
+  color: white;    /*text color*/
+}
+
+.links > ul > li:first-child {
+  background: #ffe999;
+  padding-top: 50px;
+  padding-bottom: 16.5px;
+  color: black; /* Text color for active */
+
+}
+
+/* header section: search */
+.search-icon-container {
+  display: inline;
+}
+.search-icon-container > img {
+  width: 50px;
+  display: inline;
+  margin-left: 10em;
+}
+
+/* Banner Section */
+
+.BetHealth > img{
+  display: block;
+  margin: 0 auto 0 auto ;
+  width: 70%;
+}
+
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden; /* Ensures content stays within bounds */
+  text-align: center; /* Centers its contents horizontally */
+}
+
+.banner-section .banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Puts it behind the main text image */
+}
+.banner-main-text-image {
+  position: absolute; /* Position it absolutely within the banner-section */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Shift it back by half its own width/height to truly center */
+  width: 60%; /* Adjust size relative to banner. Your image seems wide. */
+  max-width: 600px; /* Example max width based on your image crop */
+  height: auto;
+  z-index: 2; /* Ensure it's above the background */
+}
+
+/* Main Content Area */
+.main-content-layout {
+  text-align: center;
+  padding: 60px 40px;
+  font-family: 'Inter', sans-serif;
+  background-color: #EFD2B5;
+
+}
+.content-blocks-column {
+  display: inline-block;
+  vertical-align: top;
+  width: 55%;
+  text-align: left;
+  margin-right: 200px;
+  padding: 20px 0;
+}
+.content-block {
+  display: flow-root; /* To contain floated elements later. Or use clearfix pattern */
+  overflow: hidden; /* Clear floats */
+  margin-bottom: 30px;
+  background-color: transparent;
+  padding: 0px;
+  border-radius: 0px;
+  box-shadow: none;
+  
+}
+.content-block img {
+  float: left; /* Float image to the left */
+  width: 270px;
+  height: 270px;
+  margin-right: 30px; /* Space between image and text */
+  object-fit: contain;
+}
+.content-block .text-content {
+  overflow: hidden; /* Contains the text next to the floated image */
+}
+.content-block .text-content h3 {
+  font-size: 35px;
+  font-family: 'Righteous';
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.content-block .text-content p {
+  font-size: 22px;
+  font-family: 'Rhodioum Libre';
+  color: #000000;
+  line-height: 1.6; /* Ensure consistent line height */
+}
+.trends-column {
+  display: inline-block; /* Treat as a column */
+  vertical-align: top;
+  width: 20%;
+  height: 20%;
+  padding: 0;
+  border-radius: 0;
+  text-align: center;
+  background-color: #FFF8DC;
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+.trends-column h4 {
+  font-size: 22px;
+  font-weight: 0;
+  font-family: 'Righteous';
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px 15px;
+  padding-top: 10px;
+  margin: -40px auto 20px auto;
+  width: 250px;
+  display: block;
+  background-color: #B09464;
+}
+
+.trend-item {
+  margin-bottom: 15px;
+  padding: 0; 
+  text-align: c;/* Ensures no extra padding */
+}
+
+.trend-item h5 {
+  font-family: 'Rhodium Libre';
+  font-size: 21px;
+  color: #000000;
+  margin-right: 250px;
+  margin-block: 0;
+}
+
+.trend-item p {
+  font-family: 'Rhodium Libre';
+  font-size: 14px;
+  color: #000000;
+  margin-top: 5px;
+}
+.trend-item img{
+  width: 200px;
+}
+
+/* Quote Section */
+.quote-section {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #FFF8DC;
+  color: #8D3409;
+}
+
+.quote-sectionimg{
+  width: 452px;
+  height: 453px;
+  margin-top:2073px;
+  margin-left: 86px;
+  border-radius: 255px; */
+}
+
+.just-breathe-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  margin-right: 40px;
+}
+.health-quote {
+  display: inline-block;
+  font-family: 'Great Vibes';
+  font-size: 100px;
+  max-width: 850px;
+  line-height: 1.3;
+  margin: 0;
+}
+.health-word {
+  font-family: 'Glass Antiqua';
+  font-size: 110px;
+}
+.footer {
+  background-color: #b09464;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  
+}
+.footer > p {
+  font-family: "Abel", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+  
+}
